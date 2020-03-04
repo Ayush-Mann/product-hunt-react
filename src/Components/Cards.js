@@ -18,16 +18,19 @@ class Cards extends React.Component{
         }
     }
     render(){
-        return(<>
-            {
-                this.state.data.map((product)=>{
-                    return(
-                        <Card className="card-component" key={product.title} {...product}/>
-                    )
-                })
-            }
+        return(
+            <div className="cards-list-container">
+                <h4 style={{"font-size":"28px", "margin-left":"163px", "padding":"10px"}}>Todays</h4>
+                {
+                    this.state.data.map((product)=>{
+                        return(
+                            <Card className="card-component" key={product.title} {...product}/>
+                        )
+                    })
+                }
+            </div>
             
-        </>)
+        )
     }
 }
 
