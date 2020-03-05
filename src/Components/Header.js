@@ -40,7 +40,7 @@ class Header extends React.Component{
                         <div className="link-container">
                             <a href="#">Post</a>
                         </div>
-                        <FaBell  style={{"padding-right":"15px"}}/>
+                        <FaBell  style={{"padding-right":"18px","cursor":"pointer"}}/>
                         <a>
                             <img className="profile-link"  src="https://ph-avatars.imgix.net/2271389/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=40&h=40&fit=crop" alt="image"/ >
                         </a>

@@ -3,10 +3,12 @@ import { FaCaretUp } from 'react-icons/fa';
 
 function UpvoteButton(props){
     return(
-        <div className="upvote-btn">
+        <button className="upvote-btn" onClick={()=>{props.updateUpvote(props.title)}}>
             <FaCaretUp size={25} />
             <p>{props.upvotes}</p>
-        </div>
+            
+        </button>
+        
     )
 }
 

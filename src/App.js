@@ -9,11 +9,7 @@ class App extends React.Component{
        return(
             <div>
                 <Header />
-                <div className="outer-container flex">
-                    <Cards />
-                    <Aside />
-                </div>
-                
+                <Cards />
             </div>
        )
     }

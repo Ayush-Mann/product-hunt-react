@@ -13,9 +13,13 @@ class Card extends React.Component{
                 <div className="content-container">
                     <h4 className="content-heading">{this.props.title}</h4>
                     <p className="para-text">{this.props.desc}</p>
-                    <CommentBtn data={this.props.comments}/>
+                    <div className="mini-section-cards">
+                        <CommentBtn data={this.props.comments}/>
+                        <p className="tags">{this.props.tags}</p>
+                    </div>
                 </div>
-                <UpvoteButton upvotes={this.props.upvotes}/>
+                {/* <button onClick={this.props.updateUpvote}></button> */}
+                <UpvoteButton upvotes={this.props.upvotes} title={this.props.title} updateUpvote={this.props.updateVote}/>
             </div>
         
         )
