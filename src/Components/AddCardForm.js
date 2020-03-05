@@ -22,6 +22,14 @@ class AddCardForm extends React.Component{
     }
     handleSubmit =()=>{
         this.props.func(this.state)
+        this.setState({
+            title:"",
+            desc:"",
+            tags:'',
+            comments:'',
+            img:'',
+            upvotes:0,
+        })
     }
     render(){
         return(
@@ -32,7 +40,7 @@ class AddCardForm extends React.Component{
             <input name='comments' type="text" onChange={this.handleChange} value={this.state.comments} placeholder="Enter number of comments" />
             <input name='img' type="text" onChange={this.handleChange} value={this.state.url} placeholder="Enter image url "/>
             {/* <input name='upvotes' type="text" onChange={this.handleChange} value={this.state.upvotes} placeholder="Enter upvotes" /> */}
-            <input className="form-submit-btn" type="submit" value="submit" onClick={()=>this.handleSubmit()} />
+            <input className="form-submit-btn" type="submit" value="Submit" onClick={()=>this.handleSubmit()} />
         </div>
         )
     }
