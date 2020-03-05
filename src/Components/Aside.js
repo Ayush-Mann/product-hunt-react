@@ -37,10 +37,10 @@ function Aside(props){
                     </div>
                 </div>
                 <div className="radio-container-sponsored">
-                    <span>Sponsored by<span className="headspin">headspin</span></span>
+                    <span style={{'color':"rgb(164,144,135)"}}>Sponsored by<span className="headspin">headspin</span></span>
                 </div>
             </div>
-            <div className="newsletter-outer-container">
+            <div className="newsletter-outer-container one-edge-shadow">
                 <AsideHeading content="Newsletter"/>
                 <div className="newsletter-innercontainer">
                     <img style={{width:"100%","border-top-right-radius":"4px",'border-top-left-radius':"4px"}} src="https://media3.giphy.com/media/5YayOGiDo5vItN379Q/100.webp?cid=790b7611fe3978295e63a27472d33b8ca6f3d068eb210d64&rid=100.webp" alt="image"/>
