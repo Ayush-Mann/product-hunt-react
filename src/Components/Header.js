@@ -50,7 +50,7 @@ class Header extends React.Component{
                     </div>
                     <div className="profile-links-container">
                         <NavLink name="Post"/>
-                        <FaBell  style={{"padding-right":"18px","cursor":"pointer"}}/>
+                        <FaBell  style={{"paddingRight":"18px","cursor":"pointer"}}/>
                         <a>
                             <img className="profile-link"  src="https://ph-avatars.imgix.net/2271389/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=40&h=40&fit=crop" alt="image"/ >
                         </a>

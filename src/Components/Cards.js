@@ -14,15 +14,32 @@ class Cards extends React.Component{
         super()
         this.state = {
             data:initialData,
-            yesterdayData:null
+            yesterdayData:null,
+            token:"muxg2sBBV_vsK_r4tZ6DhY2a8neQWOnJ1_OV8dc4b0Q"
         }
     }
     componentDidMount(){
-        this.setState({
-            yesterdayData:yesterdayData
-        }) 
+        axios('https://api.producthunt.com/v1/posts/all?sort_by=votes_count&order=desc&search[featured]=true&per_page=20',
+        {
+            method:"GET",
+            headers:{
+                "Content-Type":"applcation/json",
+                "Authorization":`Bearer ${this.state.token}`,
+                "Accept":'application/json'
+                // "Host":"api.producthunt.com"
+            }
+        })
+        .then(res => {
+            this.setState({
+                data:res.data.posts,
+                yesterdayData:yesterdayData
+                })
+            // console.log(res)
+        })
+
     }
     
+
     handleForm = (temp) =>{
         this.setState({
             data:this.state.data.concat(temp)
@@ -45,13 +62,13 @@ class Cards extends React.Component{
         return(
             <div className="outer-container flex wrapper">
                 <div className="cards-list-container">
-                    <h4 style={{"font-size":"22px", "padding":"13px 0", fontWeight:"700"}}>Todays</h4>
+                    <h4 style={{"font-size":"22px", "padding":"13px 0", fontWeight:"700"}}>Today</h4>
                     {
-                        this.state.data.map((product)=>{
+                        this.state.data ? this.state.data.map((product)=>{
                             return(
                                 <Card className="card-component" key={product.title} {...product} updateVote={this.updateVote}/>
                             )
-                        })
+                        }):null
                     }
                     <h4 style={{padding:"20px 0", fontSize:"18px", fontWeight:"700"}}>Yesterday</h4>
                     {
