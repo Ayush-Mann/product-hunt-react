@@ -6,7 +6,7 @@ import AddCardForm from "./AddCardForm"
 function Aside(props){
     return(
         <div className="aside-outer-contianer">
-            <p  style={{"font-size":"17px","font-weight":"700","padding":"15px 0"}}>Makers working today</p>
+            <p  style={{"font-size":"17px","fontWeight":"700","padding":"15px 0"}}>Makers working today</p>
             <div className="aside-container one-edge-shadow">   
                 <div className="people-container">
                     <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/2271389/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=40&h=40&fit=crop" alt="image"/ ></a>
@@ -23,14 +23,14 @@ function Aside(props){
             
                 <div className="secondary-container">
                     <hr style={{width:"70%", margin:"0 auto"}} />
-                    <div style={{"padding":"15px", "text-align":"center",}}>
+                    <div style={{"padding":"15px", "textAlign":"center",}}>
                         <a><span  className="secondary-container-link">START WORKING NOW</span></a>
                     </div>
                 </div>
             </div>
             <div className="radio-container">
                 
-                <p style={{"font-size":"18px", "font-weight":"700", "padding":"10px 0"}}>Product Hunt Radio</p>
+                <p style={{"font-size":"18px", "fontWeight":"700", "padding":"10px 0"}}>Product Hunt Radio</p>
                 <div className="flex radio-inner-container">
                 <div className="radio-container-para">
                     <p>How to launch an operator-led fund with Brianne Kimmel</p>
@@ -45,10 +45,10 @@ function Aside(props){
             <div className="newsletter-outer-container one-edge-shadow">
                 <AsideHeading content="Newsletter"/>
                 <div className="newsletter-innercontainer">
-                    <img style={{width:"100%","border-top-right-radius":"4px",'border-top-left-radius':"4px"}} src="https://media3.giphy.com/media/5YayOGiDo5vItN379Q/100.webp?cid=790b7611fe3978295e63a27472d33b8ca6f3d068eb210d64&rid=100.webp" alt="image"/>
-                    <p style={{"text-align":"center","font-size":"20px","font-weight":"400",padding:"9px 0"}}>A car for 14-year-olds 🚗</p>
+                    <img style={{width:"100%","borderTopRightRadius":"4px",'borderTopLeftRadius':"4px"}} src="https://media3.giphy.com/media/5YayOGiDo5vItN379Q/100.webp?cid=790b7611fe3978295e63a27472d33b8ca6f3d068eb210d64&rid=100.webp" alt="image"/>
+                    <p style={{"textAlign":"center","font-size":"20px","fontWeight":"400",padding:"9px 0"}}>A car for 14-year-olds 🚗</p>
                     <hr />
-                    <p style={{'font-size': '18px',"text-align":"center",'line-height': '1','font-weight': '700',padding:"10px 5px"}}>Get the best new products in your inbox, every day 👇</p>
+                    <p style={{'font-size': '18px',"textAlign":"center",'lineHeight': '1','fontWeight': '700',padding:"10px 5px"}}>Get the best new products in your inbox, every day 👇</p>
                     <Button width="200px" content="Subscribe"/>
                 </div>
             </div>
