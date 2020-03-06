@@ -240,6 +240,11 @@ body{
        -moz-box-shadow: 0 8px 2px -2px #f0f0f0;
             box-shadow: 0 8px 2px -6px #f0f0f0;
 }
+.one-edge-shadow-extra{
+    -webkit-box-shadow: 0 8px 2px -2px #dddddd;
+       -moz-box-shadow: 0 8px 2px -2px #dddddd;
+            box-shadow: 0 8px 2px -6px #dddddd;
+}
 .aside-outer-contianer{
     margin-left: 30px;
     box-sizing: border-box;
@@ -250,7 +255,7 @@ body{
    
 }
 .radio-inner-container{
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
     font-size: 16px;
     line-height: 1.2;
@@ -274,10 +279,19 @@ body{
     font-size: 13px;
 }
 .radio-image{
-    width: 70px;
-    height:50px;
-
-   
+    width: 100px;
+    height:70px;
+    background-color: yellow;  
+}
+.radio-container-para{
+    padding: 10px ;
+}
+.radio-svg{
+    position: relative;;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    right: 30px;
 }
 .newsletter-innercontainer{
     border: 1px solid #e8e8e8e8;
@@ -326,4 +340,5 @@ body{
     display:flex;
     justify-content: flex-start;
     align-items: flex-start;
+    vertical-align: top;
 }
