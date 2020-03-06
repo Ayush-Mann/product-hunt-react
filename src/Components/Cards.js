@@ -49,8 +49,9 @@ class Cards extends React.Component{
     }
     updateVote=(name)=>{
         const updatedData = this.state.data.map((product)=>{
-            if(product.title === name){
-               product.upvotes = Number(product.upvotes)+1
+            if(product.name === name){
+               product.votes_count = Number(product.votes_count)+1
+               console.log("checking")
             }
             return product
         })

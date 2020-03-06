@@ -18,7 +18,7 @@ class Card extends React.Component{
                         <p className="tags">{this.props.tags}</p>
                     </div>
                 </div>
-                <UpvoteButton upvotes={this.props.votes_count} title={this.props.title} updateUpvote={this.props.updateVote}/>
+                <UpvoteButton upvotes={this.props.votes_count} name={this.props.name} updateUpvote={this.props.updateVote}/>
             </div>
         
         )
