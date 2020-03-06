@@ -1,22 +1,26 @@
 import React from "react"
 import axios from "axios"
+
 import initialData from "../initial-data"
+import yesterdayData from '../assets/yesterdaydata'
 import Card from "./Card"
 import Aside from "./Aside"
 
 class Cards extends React.Component{
-    // componentDidMount(){
-    //     this.setState({
-    //         data:initialData
-    //     })
-
-    // }
+    
 
     constructor(){
         super()
         this.state = {
-            data:initialData
+            data:initialData,
+            yesterdayData:null
         }
+    }
+    componentDidMount(){
+        this.setState({
+            yesterdayData:yesterdayData
+        })
+
     }
     handleForm = (temp) =>{
         this.setState({
@@ -26,9 +30,7 @@ class Cards extends React.Component{
 
     }
     updateVote=(name)=>{
-        // console.log("hello there",name)
         const updatedData = this.state.data.map((product)=>{
-            // console.log(product.name,temp)
             if(product.title === name){
                product.upvotes = Number(product.upvotes)+1
             }
@@ -42,13 +44,21 @@ class Cards extends React.Component{
         return(
             <div className="outer-container flex wrapper">
                 <div className="cards-list-container">
-                    <h4 style={{"font-size":"28px", "padding":"10px 0"}}>Todays</h4>
+                    <h4 style={{"font-size":"22px", "padding":"13px 0", fontWeight:"700"}}>Todays</h4>
                     {
                         this.state.data.map((product)=>{
                             return(
                                 <Card className="card-component" key={product.title} {...product} updateVote={this.updateVote}/>
                             )
                         })
+                    }
+                    <h4 style={{padding:"20px 0", fontSize:"18px", fontWeight:"700"}}>Yesterday</h4>
+                    {
+                        this.state.yesterdayData ? this.state.yesterdayData.map((product)=>{
+                            return(
+                                <Card className="card-component" key={product.title} {...product} updateVote={this.updateVote} />
+                            )
+                        }):null
                     }
                 </div>
                 <Aside handleForm={this.handleForm} />
