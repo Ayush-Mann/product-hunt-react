@@ -304,6 +304,7 @@ body{
     border-radius: 2px;
     border: none;
     cursor: pointer;
+    margin-top:10px
 }
 .form-outer-container{
     padding: 25px 0;

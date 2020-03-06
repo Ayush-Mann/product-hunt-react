@@ -42,7 +42,7 @@ class Cards extends React.Component{
         return(
             <div className="outer-container flex wrapper">
                 <div className="cards-list-container">
-                    <h4 style={{"font-size":"28px", "padding":"10px 0"}}>Todays</h4>
+                    <h4 style={{"font-size":"22px","font-weight":'700', "padding":"13px 0"}}>Todays</h4>
                     {
                         this.state.data.map((product)=>{
                             return(
