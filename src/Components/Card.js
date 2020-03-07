@@ -9,7 +9,7 @@ class Card extends React.Component{
     render(){
         return(
             <div className="card-container">
-                <img className="image-container"  src={this.props.thumbnail ? this.props.thumbnail.image_url : null} alt="this.props.title"/>
+                <img className="image-container"  src={this.props.thumbnail ? this.props.thumbnail.image_url : null} alt={this.props.title}/>
                 <div className="content-container">
                     <h4 className="content-heading">{this.props.name}</h4>
                     <p className="para-text">{this.props.tagline}</p>

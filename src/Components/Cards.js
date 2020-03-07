@@ -5,7 +5,7 @@ import initialData from "../initial-data"
 import yesterdayData from '../assets/yesterdaydata'
 import Card from "./Card"
 import Aside from "./Aside"
-import { FaRss } from "react-icons/fa"
+
 
 class Cards extends React.Component{
     

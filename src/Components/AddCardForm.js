@@ -1,16 +1,18 @@
 import React from "react"
-import initialData from "../initial-data"
+// import initialData from "../initial-data"
 
 class AddCardForm extends React.Component{
     constructor(props){
         super(props)
         this.state={
-            title:"",
-            desc:"",
+            name:"",
+            tagline:"",
             tags:'',
-            comments:'',
-            img:'',
-            upvotes:0,
+            comments_count:'',
+            thumbnail:{
+                image_url:""
+            },
+            upvotes_count:0,
 
         }
     }
@@ -23,22 +25,24 @@ class AddCardForm extends React.Component{
     handleSubmit =()=>{
         this.props.func(this.state)
         this.setState({
-            title:"",
+            name:"",
             desc:"",
             tags:'',
-            comments:'',
-            img:'',
-            upvotes:0,
+            comments_count:'',
+            thumbnail:{
+                image_url:""
+            },
+            upvotes_count:0,
         })
     }
     render(){
         return(
         <div className='form-section'>
-            <input name='title' type="text" onChange={this.handleChange} value={this.state.title} placeholder="Enter title"/>
-            <input name='desc' type="text" onChange={this.handleChange} value={this.state.desc} placeholder="Enter description" />
+            <input name='name' type="text" onChange={this.handleChange} value={this.state.title} placeholder="Enter title"/>
+            <input name='tagline' type="text" onChange={this.handleChange} value={this.state.desc} placeholder="Enter description" />
             <input name='tags'type="text" onChange={this.handleChange} value={this.state.tags} placeholder="Enter tags" />
-            <input name='comments' type="text" onChange={this.handleChange} value={this.state.comments} placeholder="Enter number of comments" />
-            <input name='img' type="text" onChange={this.handleChange} value={this.state.url} placeholder="Enter image url "/>
+            <input name='comments_count' type="text" onChange={this.handleChange} value={this.state.comments} placeholder="Enter number of comments" />
+            <input name='thumbnail.image_url' type="text" onChange={this.handleChange} value={this.state.url} placeholder="Enter image url "/>
             {/* <input name='upvotes' type="text" onChange={this.handleChange} value={this.state.upvotes} placeholder="Enter upvotes" /> */}
             <input className="form-submit-btn" type="submit" value="Submit" onClick={()=>this.handleSubmit()} />
         </div>
