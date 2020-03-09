@@ -208,12 +208,17 @@ body{
 .profile-link{
     padding:0 5px 0 5px;
     border-radius: 50%;
+    width: 40px;
 }
 
 .people-container{
     /* background-color: white; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 20px;
     border: none;
+    
     /* margin: 5px; */
 }
 
@@ -224,6 +229,8 @@ body{
     border: 1px  solid #e8e8e8e8;
     border-radius: 8px;
     margin-bottom: 12px;
+    /*  */
+     
     
 
 }

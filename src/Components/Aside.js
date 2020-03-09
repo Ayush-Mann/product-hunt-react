@@ -9,16 +9,19 @@ function Aside(props){
             <p  style={{"font-size":"17px","fontWeight":"700","padding":"15px 0"}}>Makers working today</p>
             <div className="aside-container one-edge-shadow">   
                 <div className="people-container">
+                    <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/1383615/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=120&h=120&fit=crop" alt="image"/ ></a>
                     <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/2271389/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=40&h=40&fit=crop" alt="image"/ ></a>
+                    <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/2420614/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=120&h=120&fit=crop" alt="image"/ ></a>
                     <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/2271389/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=40&h=40&fit=crop" alt="image"/ ></a>
-                    <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/2271389/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=40&h=40&fit=crop" alt="image"/ ></a>
-                    <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/2271389/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=40&h=40&fit=crop" alt="image"/ ></a>
-                    <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/2271389/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=40&h=40&fit=crop" alt="image"/ ></a>
-                    <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/2271389/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=40&h=40&fit=crop" alt="image"/ ></a>
-                    <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/2271389/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=40&h=40&fit=crop" alt="image"/ ></a>
-                    <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/2271389/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=40&h=40&fit=crop" alt="image"/ ></a>
-                    <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/2271389/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=40&h=40&fit=crop" alt="image"/ ></a>
-                    <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/2271389/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=40&h=40&fit=crop" alt="image"/ ></a>
+                    <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/166755/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=120&h=120&fit=crop" alt="image"/ ></a>
+                    <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/2103322/6559a5f8-8611-4baa-8310-bf08c1cf367c?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=120&h=120&fit=crop" alt="image"/ ></a>
+                    <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/76972/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=120&h=120&fit=crop" alt="image"/ ></a>
+                    <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/2060824/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=120&h=120&fit=crop" alt="image"/ ></a>
+                    <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/17305/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=120&h=120&fit=crop" alt="image"/ ></a>
+                    <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/2429765/03c37446-cbdb-4be1-af4c-32e18d16f086?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=120&h=120&fit=crop" alt="image"/ ></a>
+                    <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/952460/5c8af324-4807-4d30-964b-a908bc093552?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=120&h=120&fit=crop" alt="image"/ ></a>
+                    <a href="#"><img className="profile-link"  src="https://ph-avatars.imgix.net/1595131/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=120&h=120&fit=crop" alt="image"/ ></a>
+
                 </div> 
             
                 <div className="secondary-container">
